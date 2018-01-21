@@ -22,4 +22,4 @@ Using *xcodebuild* on the command line is not failing in both cases.
 I do not think the issue depends on the concrete number of files to be compiled: An other project I'm working with is able to be compiled by the build bot when its build target contains 1384 files, but a commit where the target contains 1392 files is failing in the same way as this project:
 The number of files is less than here, but their file names are quite longer.
 
-On my system `getconf ARG_AMX` results in 262144, maybe the build bot is reaching this limit.
+On my system `getconf ARG_MAX` results in 262144, maybe the build bot is reaching this limit.
