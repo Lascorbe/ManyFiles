@@ -20,7 +20,7 @@ class $CLASSNAME {
 EOF
 }
 
-for letter in {A..G}; do
+for letter in {A..Q}; do
   echo "Generating classes ${letter}01 - ${letter}99 ..." 
   for number in {1..99}; do
     generateClass $letter $number
