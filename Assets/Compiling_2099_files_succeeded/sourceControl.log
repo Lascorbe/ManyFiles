@@ -1,0 +1,48 @@
+Jan 21 15:40:10  [652] <Info>: Will attempt to update checkout cache for bot
+Jan 21 15:40:10  [652] <Info>: Xcode Source Control Blueprint was valid.
+Jan 21 15:40:10  [652] <Info>: About to update/checkout:
+	git@github.com:chkpnt/ManyFiles.git Branch: does_work into ManyFiles/ 
+Jan 21 15:40:12  [652] <Info>: Counting objects: 2748 done
+Jan 21 15:40:12  [652] <Info>: 3.70% Compressing objects: 37% done
+Jan 21 15:40:13  [652] <Info>: 10.60% Receiving objects: 1% done
+Jan 21 15:40:13  [652] <Info>: 22.00% Receiving objects: 20% done
+Jan 21 15:40:13  [652] <Info>: 53.20% Receiving objects: 72% done
+Jan 21 15:40:13  [652] <Info>: 90.00% Checking out
+Jan 21 15:40:13  [652] <Info>: 90.49% Checking out: ManyFiles/C/C45.swift
+Jan 21 15:40:13  [652] <Info>: 91.00% Checking out: ManyFiles/F/F14.swift
+Jan 21 15:40:13  [652] <Info>: 91.63% Checking out: ManyFiles/I/I42.swift
+Jan 21 15:40:13  [652] <Info>: 92.18% Checking out: ManyFiles/L/L28.swift
+Jan 21 15:40:13  [652] <Info>: 92.83% Checking out: ManyFiles/O/O67.swift
+Jan 21 15:40:14  [652] <Info>: 93.49% Checking out: ManyFiles/S/S10.swift
+Jan 21 15:40:14  [652] <Info>: 94.15% Checking out: ManyFiles/V/V58.swift
+Jan 21 15:40:14  [652] <Info>: 94.76% Checking out: ManyFiles/Y/Y71.swift
+Jan 21 15:40:14  [652] <Info>: Completed checkout of:
+	git@github.com:chkpnt/ManyFiles.git Branch: does_work (@cb1cb5aa9cfbcab403e87a9481d927d4731f50ca) into ManyFiles/ 
+Jan 21 15:40:14  [652] <Info>: There is no previous revision blueprint. Loading the last 5 commits for each working copy.
+Jan 21 15:40:14  [652] <Info>: Got 5 log items:
+	Revision: cb1cb5a
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:30:22 +0000
+	
+	          Reduce to 2099 source files to compile
+	Revision: 89240d5
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:28:22 +0000
+	
+	          Increase to 2100 source files to compile
+	Revision: ca3ab77
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:24:55 +0000
+	
+	          Increase to 2096 source files to compile
+	Revision: 3d98aaa
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:22:21 +0000
+	
+	          Increase to 2089 source files to compile
+	Revision: cca4424
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:18:46 +0000
+	
+	          Increase to 2075 source files to compile
+Jan 21 15:40:14  [652] <Info>: Saving commit history, errors: (null)

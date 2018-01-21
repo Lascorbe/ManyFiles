@@ -1,0 +1,101 @@
+Jan 21 17:44:30  [652] <Info>: Should clean: False, for reason: XCSBotBuildsFromCleanNever
+Jan 21 17:44:30  [652] <Info>: This integration is NOT configured to build from clean, reusing existing derived data (if it exists) at /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData
+Jan 21 17:44:30  [652] <Info>: Required build directory /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8 already exists, leaving as is.
+Jan 21 17:44:30  [652] <Info>: Required build directory /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData already exists, leaving as is.
+Jan 21 17:44:30  [652] <Info>: Completed integration step XCSPrepareIntegrationStep without error
+Jan 21 17:44:32  [652] <Info>: Saving integration with revisioned blueprint: <XCSBotSCMBlueprint 0x7fa7f3b3ccb0>
+	{"DVTSourceControlWorkspaceBlueprintAdditionalValidationRemoteRepositoriesKey":[],"DVTSourceControlWorkspaceBlueprintLocationsKey":{"C7ED24F3723AFB80448C9EC0A36217763BA00528":{"DVTSourceControlBranchIdentifierKey":"does_not_work","DVTSourceControlLocationRevisionKey":"89240d55e59393fb20a39d69f542a213c1ba9c90","DVTSourceControlBranchOptionsKey":4,"DVTSourceControlBranchRemoteNameKey":"origin","DVTSourceControlWorkspaceBlueprintLocationTypeKey":"DVTSourceControlBranch"}},"DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey":"C7ED24F3723AFB80448C9EC0A36217763BA00528","DVTSourceControlWorkspaceBlueprintIdentifierKey":"572F1625-75EA-48F8-A209-ECC4047B31A2","DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey":{"C7ED24F3723AFB80448C9EC0A36217763BA00528":"ManyFiles\/"},"DVTSourceControlWorkspaceBlueprintNameKey":"ManyFiles","DVTSourceControlWorkspaceBlueprintVersion":205,"DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey":"ManyFiles.xcodeproj","DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey":[{"DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey":"github.com:chkpnt\/ManyFiles.git","DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey":"com.apple.dt.Xcode.sourcecontrol.Git","DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey":"C7ED24F3723AFB80448C9EC0A36217763BA00528"}]}
+Jan 21 17:44:33  [652] <Info>: Completed integration step XCSCheckoutIntegrationStep without error
+Jan 21 17:44:33  [652] <Info>: No triggers found or allowed for current conditions, skipping XCSTriggersIntegrationStep
+Jan 21 17:44:33  [652] <Info>: Asset packs will be hosted at http://asiago.local:20300/api/assets/assetpacks/4649FE14-D376-423A-B3DC-9A4301C6E304/
+Jan 21 17:44:33  [652] <Info>: Current server devices are needed but not loaded yet, fetching.
+Jan 21 17:44:33  [652] <Info>: Devices loaded successfully.
+Jan 21 17:44:33  [652] <Info>: Current server platforms are needed but not loaded yet, fetching.
+Jan 21 17:44:33  [652] <Info>: Platforms loaded successfully.
+Jan 21 17:44:33  [652] <Info>: Creating arguments list for integrate
+Jan 21 17:44:33  [652] <Info>: Integration will not perform analyze action
+Jan 21 17:44:33  [652] <Info>: Additional build arguments are "(
+	)"
+Jan 21 17:44:33  [652] <Info>: Integrate arguments list is (
+	    "/usr/bin/xcrun",
+	    xcodebuild,
+	    "-IDEBuildOperationMaxPercentageOfConcurrentCompileTasks=80",
+	    "-DTDKSupportWirelessDevices=NO",
+	    "-IDEPostProgressNotifications=YES",
+	    "INDEX_ENABLE_DATA_STORE=NO",
+	    "-DVTAllowServerCertificates=YES",
+	    "-DVTProvisioningUseServerAccounts=YES",
+	    "-DTDKDisableSymbolCopying=YES",
+	    "-scheme",
+	    ManyFiles,
+	    "-skipUnavailableActions",
+	    "-project",
+	    "/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles/ManyFiles.xcodeproj",
+	    "-derivedDataPath",
+	    "/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData",
+	    "-skipUnsupportedDestinations",
+	    "-destination",
+	    "generic/platform=com.apple.platform.iphoneos",
+	    "-DVTSuppressExternalDeviceLocation=NO",
+	    "-resultBundlePath",
+	    "/Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild_result.bundle"
+	)
+Jan 21 17:44:33  [652] <Info>: NSTask environment: {
+	    "Apple_PubSub_Socket_Render" = "/private/tmp/com.apple.launchd.wEgTMaJ0hh/Render";
+	    "DEVELOPER_DIR" = "/Applications/Xcode-9.2.app/Contents/Developer";
+	    HOME = "/Users/ich";
+	    LOGNAME = ich;
+	    PATH = "/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin";
+	    SHELL = "/bin/zsh";
+	    "SSH_AUTH_SOCK" = "/private/tmp/com.apple.launchd.uOhEnfAWCi/Listeners";
+	    TMPDIR = "/var/folders/lv/s4cf722j4z78klzqh5x187lr0000gn/T/";
+	    USER = ich;
+	    XCS = 1;
+	    "XCS_BOT_ID" = 9d302483ffc60bbca04f24ee8e0229a8;
+	    "XCS_BOT_NAME" = "ManyFiles Bot";
+	    "XCS_BOT_TINY_ID" = DBC3D79;
+	    "XCS_DERIVED_DATA_DIR" = "/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData";
+	    "XCS_INTEGRATION_ID" = 9d302483ffc60bbca04f24ee8e02749a;
+	    "XCS_INTEGRATION_NUMBER" = 2;
+	    "XCS_INTEGRATION_RESULT" = unknown;
+	    "XCS_INTEGRATION_TINY_ID" = DD12047;
+	    "XCS_OUTPUT_DIR" = "/Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a";
+	    "XCS_PRIMARY_REPO_BRANCH" = "does_not_work";
+	    "XCS_PRIMARY_REPO_DIR" = "/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles";
+	    "XCS_SOURCE_DIR" = "/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source";
+	    "XCS_XCODEBUILD_LOG" = "/Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild.log";
+	    "XPC_FLAGS" = 0x0;
+	    "XPC_SERVICE_NAME" = "com.apple.dt.XCSIntegrationService";
+	    "__CF_USER_TEXT_ENCODING" = "0x1F5:0x0:0x0";
+	}
+Jan 21 17:44:33  [652] <Info>: Running task /usr/bin/nice /usr/bin/xcrun xcodebuild -IDEBuildOperationMaxPercentageOfConcurrentCompileTasks=80 -DTDKSupportWirelessDevices=NO -IDEPostProgressNotifications=YES INDEX_ENABLE_DATA_STORE=NO -DVTAllowServerCertificates=YES -DVTProvisioningUseServerAccounts=YES -DTDKDisableSymbolCopying=YES -scheme ManyFiles -skipUnavailableActions -project /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles/ManyFiles.xcodeproj -derivedDataPath /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData -skipUnsupportedDestinations -destination generic/platform=com.apple.platform.iphoneos -DVTSuppressExternalDeviceLocation=NO -resultBundlePath /Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild_result.bundle
+Jan 21 17:44:33  [652] <Info>: Monitoring /Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild.log for activity.
+Jan 21 17:44:43  [652] <Info>: Done monitoring xcodebuild.log for activity.
+Jan 21 17:44:43  [652] <Info>: Scheme actions record is needed but not loaded yet, fetching.
+Jan 21 17:44:43  [652] <Info>: Scheme actions record loaded successfully.
+Jan 21 17:44:43  [652] <Info>: Completed integration step XCSBuildIntegrationStep without error
+Jan 21 17:44:43  [652] <Info>: Last integration with build results is needed but not loaded yet, fetching.
+Jan 21 17:44:43  [652] <Info>: Last integration with build results loaded successfully.
+Jan 21 17:44:43  [652] <Info>: Build results summary: {
+	    analyzerWarningChange = 0;
+	    analyzerWarningCount = 0;
+	    codeCoveragePercentage = 0;
+	    codeCoveragePercentageDelta = 0;
+	    errorChange = 1;
+	    errorCount = 1;
+	    improvedPerfTestCount = 0;
+	    regressedPerfTestCount = 0;
+	    testFailureChange = 0;
+	    testFailureCount = 0;
+	    testsChange = 0;
+	    testsCount = 0;
+	    warningChange = 0;
+	    warningCount = 0;
+	}
+Jan 21 17:44:43  [652] <Info>: Integration commit history are needed but not loaded yet, fetching.
+Jan 21 17:44:43  [652] <Info>: Integration commits loaded successfully.
+Jan 21 17:44:43  [652] <Info>: Completed integration step XCSProcessBuildResultsIntegrationStep without error
+Jan 21 17:44:44  [652] <Info>: Uploading file /Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild_result.bundle.zip
+Jan 21 17:44:44  [652] <Warning>: No devices found in results bundle. Skipping processing test results.
+Jan 21 17:44:44  [652] <Info>: Completed integration step XCSProcessTestResultsIntegrationStep without error
+Jan 21 17:44:44  [652] <Info>: No triggers found or allowed for current conditions, skipping XCSTriggersIntegrationStep

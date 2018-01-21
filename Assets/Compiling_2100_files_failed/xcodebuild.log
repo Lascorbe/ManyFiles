@@ -1,0 +1,80 @@
+
+$ /usr/bin/xcrun xcodebuild -IDEBuildOperationMaxPercentageOfConcurrentCompileTasks=80 -DTDKSupportWirelessDevices=NO -IDEPostProgressNotifications=YES INDEX_ENABLE_DATA_STORE=NO -DVTAllowServerCertificates=YES -DVTProvisioningUseServerAccounts=YES -DTDKDisableSymbolCopying=YES -scheme ManyFiles -skipUnavailableActions -project /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles/ManyFiles.xcodeproj -derivedDataPath /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData -skipUnsupportedDestinations -destination generic/platform=com.apple.platform.iphoneos -DVTSuppressExternalDeviceLocation=NO -resultBundlePath /Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild_result.bundle
+
+User defaults from command line:
+    DTDKDisableSymbolCopying = YES
+    DTDKSupportWirelessDevices = NO
+    DVTAllowServerCertificates = YES
+    DVTProvisioningUseServerAccounts = YES
+    DVTSuppressExternalDeviceLocation = NO
+    IDEBuildOperationMaxPercentageOfConcurrentCompileTasks = 80
+    IDEBuildOperationResultBundlePath = /Users/ich/Library/Caches/XCSBuilder/Integration-9d302483ffc60bbca04f24ee8e02749a/xcodebuild_result.bundle
+    IDEDerivedDataPathOverride = /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData
+    IDEPostProgressNotifications = YES
+
+Build settings from command line:
+    INDEX_ENABLE_DATA_STORE = NO
+
+=== BUILD TARGET ManyFiles OF PROJECT ManyFiles WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles.LinkFileList
+write-file /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles-OutputFileMap.json
+
+PhaseScriptExecution Debug\ Phase\ 1 /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Script-54B958C22014D26800798FC8.sh
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    /bin/sh -c /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Script-54B958C22014D26800798FC8.sh
+DEBUG: This is the build phase just before Compile Sources
+
+Ld /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/ManyFiles normal arm64
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    export IPHONEOS_DEPLOYMENT_TARGET=11.2
+    export PATH="/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk -L/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos -F/Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos -filelist /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -miphoneos-version-min=11.2 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -fembed-bitcode-marker -fobjc-arc -fobjc-link-runtime -L/Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -Xlinker -add_ast_path -Xlinker /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles.swiftmodule -Xlinker -dependency_info -Xlinker /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/ManyFiles_dependency_info.dat -o /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/ManyFiles
+ld: file not found: /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Objects-normal/arm64/U96.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+PhaseScriptExecution Debug\ Phase\ 2 /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Script-54B958C32014D2C000798FC8.sh
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    /bin/sh -c /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/Script-54B958C32014D2C000798FC8.sh
+DEBUG: This is the build phase just after Compile Sources
+
+Touch /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    export PATH="/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /usr/bin/touch -c /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+
+CopySwiftLibs /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    export CODESIGN_ALLOCATE=/Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+    export DEVELOPER_DIR=/Applications/Xcode-9.2.app/Contents/Developer
+    export PATH="/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    export SDKROOT=/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk
+    builtin-swiftStdLibTool --copy --verbose --sign 6D712BB625319F6B1D0CDD9B9474CF55D111592C --scan-executable /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/ManyFiles --scan-folder /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/Frameworks --scan-folder /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/PlugIns --platform iphoneos --toolchain /Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/Frameworks --strip-bitcode --resource-destination /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app --resource-library libswiftRemoteMirror.dylib
+Exiting early, found no Swift version in executables.
+
+CodeSign /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    export CODESIGN_ALLOCATE=/Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+    export PATH="/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    
+Signing Identity:     "iPhone Developer: apfel@dschung.de (NLCD2YPNKT)"
+Provisioning Profile: "iOS Team Provisioning Profile: de.chkpnt.ManyFiles"
+                      (0aca4421-389f-4430-b05a-fb90e3d4bae3)
+
+    /usr/bin/codesign --force --sign 6D712BB625319F6B1D0CDD9B9474CF55D111592C --entitlements /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Intermediates.noindex/ManyFiles.build/Debug-iphoneos/ManyFiles.build/ManyFiles.app.xcent --timestamp=none /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+
+Validate /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+    cd /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/Source/ManyFiles
+    export PATH="/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/Applications/Xcode-9.2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    export PRODUCT_TYPE=com.apple.product-type.application
+    builtin-validationUtility /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld /Users/ich/Library/Caches/XCSBuilder/Bots/9d302483ffc60bbca04f24ee8e0229a8/DerivedData/Build/Products/Debug-iphoneos/ManyFiles.app/ManyFiles normal arm64
+(1 failure)

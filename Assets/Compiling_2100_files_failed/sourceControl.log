@@ -1,0 +1,126 @@
+Jan 21 17:44:30  [652] <Info>: Will attempt to update checkout cache for bot
+Jan 21 17:44:30  [652] <Info>: Xcode Source Control Blueprint was valid.
+Jan 21 17:44:30  [652] <Info>: About to update/checkout:
+	git@github.com:chkpnt/ManyFiles.git Branch: does_not_work into ManyFiles/ 
+Jan 21 17:44:32  [652] <Info>: Completed checkout of:
+	git@github.com:chkpnt/ManyFiles.git Branch: does_not_work (@89240d55e59393fb20a39d69f542a213c1ba9c90) into ManyFiles/ 
+Jan 21 17:44:33  [652] <Info>: Comparing checked out code with previous blueprint: {
+	    DVTSourceControlWorkspaceBlueprintAdditionalValidationRemoteRepositoriesKey =     (
+	    );
+	    DVTSourceControlWorkspaceBlueprintFavoriteStatusKey = 0;
+	    DVTSourceControlWorkspaceBlueprintIdentifierKey = "62744DDE-7ED2-4260-A2C4-C5676BFC9449";
+	    DVTSourceControlWorkspaceBlueprintLocationsKey =     {
+	        C7ED24F3723AFB80448C9EC0A36217763BA00528 =         {
+	            DVTSourceControlBranchIdentifierKey = "does_work";
+	            DVTSourceControlBranchOptionsKey = 4;
+	            DVTSourceControlBranchRemoteNameKey = origin;
+	            DVTSourceControlLocationRevisionKey = cb1cb5aa9cfbcab403e87a9481d927d4731f50ca;
+	            DVTSourceControlWorkspaceBlueprintLocationTypeKey = DVTSourceControlBranch;
+	        };
+	    };
+	    DVTSourceControlWorkspaceBlueprintNameKey = ManyFiles;
+	    DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey = C7ED24F3723AFB80448C9EC0A36217763BA00528;
+	    DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey = "ManyFiles.xcodeproj";
+	    DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey =     (
+	                {
+	            DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey = C7ED24F3723AFB80448C9EC0A36217763BA00528;
+	            DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey = "com.apple.dt.Xcode.sourcecontrol.Git";
+	            DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey = "github.com:chkpnt/ManyFiles.git";
+	        }
+	    );
+	    DVTSourceControlWorkspaceBlueprintRemoteRepositoryAuthenticationStrategiesKey =     {
+	        C7ED24F3723AFB80448C9EC0A36217763BA00528 =         {
+	            DVTSourceControlWorkspaceBlueprintRemoteRepositoryAuthenticationTypeKey = DVTSourceControlAuthenticationStrategy;
+	        };
+	    };
+	    DVTSourceControlWorkspaceBlueprintVersion = 205;
+	    DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey =     {
+	        C7ED24F3723AFB80448C9EC0A36217763BA00528 = "ManyFiles/";
+	    };
+	    DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey =     {
+	    };
+	    DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey =     {
+	    };
+	}
+Jan 21 17:44:33  [652] <Info>: Got 16 log items:
+	Revision: 89240d5
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:28:22 +0000
+	
+	          Increase to 2100 source files to compile
+	Revision: ca3ab77
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:24:55 +0000
+	
+	          Increase to 2096 source files to compile
+	Revision: 3d98aaa
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:22:21 +0000
+	
+	          Increase to 2089 source files to compile
+	Revision: cca4424
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:18:46 +0000
+	
+	          Increase to 2075 source files to compile
+	Revision: 58885e1
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:13:28 +0000
+	
+	          Reduce to 2050 source files to compile
+	Revision: 81ed2e3
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:10:11 +0000
+	
+	          Increase to 2103 source files to compile
+	Revision: f9b7936
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:06:56 +0000
+	
+	          Increase to 2003 source files to compile
+	Revision: 69426bf
+	Author:   Gregor Dschung
+	Date:     2018-01-21 14:02:18 +0000
+	
+	          Reduce to 1803 source files to compile
+	Revision: 87adb76
+	Author:   Gregor Dschung
+	Date:     2018-01-21 13:58:32 +0000
+	
+	          Reduce to 2203 source files to compile
+	Revision: 73a5349
+	Author:   Gregor Dschung
+	Date:     2018-01-21 13:55:31 +0000
+	
+	          Integrate some debug build phases
+	Revision: 03939a4
+	Author:   Gregor Dschung
+	Date:     2018-01-21 13:50:49 +0000
+	
+	          Add some more generated classes
+	Revision: 9bac80b
+	Author:   Gregor Dschung
+	Date:     2018-01-21 12:21:38 +0000
+	
+	          Add some more generated classes
+	Revision: 4054053
+	Author:   Gregor Dschung
+	Date:     2018-01-21 11:39:57 +0000
+	
+	          Add an ObjC-class and bridging header
+	Revision: 025e358
+	Author:   Gregor Dschung
+	Date:     2018-01-21 11:16:12 +0000
+	
+	          Add some more generated classes
+	Revision: 0ea68c8
+	Author:   Gregor Dschung
+	Date:     2018-01-21 11:10:16 +0000
+	
+	          Add some generated classes
+	Revision: 8b0a849
+	Author:   Gregor Dschung
+	Date:     2018-01-21 11:10:08 +0000
+	
+	          Auf geht’s, ab geht’s, 3 Tage wach!
+Jan 21 17:44:33  [652] <Info>: Saving commit history, errors: (null)
