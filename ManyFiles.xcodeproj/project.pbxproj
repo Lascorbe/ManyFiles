@@ -8086,7 +8086,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B0BAAE2014A2E6007892F4 /* Build configuration list for PBXNativeTarget "ManyFiles" */;
 			buildPhases = (
+				54B958C22014D26800798FC8 /* Debug Phase 1 */,
 				54B0BA982014A2E6007892F4 /* Sources */,
+				54B958C32014D2C000798FC8 /* Debug Phase 2 */,
 				54B0BA992014A2E6007892F4 /* Frameworks */,
 				54B0BA9A2014A2E6007892F4 /* Resources */,
 			);
@@ -8146,6 +8148,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54B958C22014D26800798FC8 /* Debug Phase 1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Debug Phase 1";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"DEBUG: This is the build phase just before Compile Sources\"";
+			showEnvVarsInLog = 0;
+		};
+		54B958C32014D2C000798FC8 /* Debug Phase 2 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Debug Phase 2";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"DEBUG: This is the build phase just after Compile Sources\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54B0BA982014A2E6007892F4 /* Sources */ = {
