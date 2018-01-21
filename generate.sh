@@ -22,7 +22,7 @@ EOF
 
 for letter in {A..Z}; do
   echo "Generating classes ${letter}01 - ${letter}99 ..." 
-  for number in {1..99}; do
+  for number in {0..99}; do
     generateClass $letter $number
   done
 done 
