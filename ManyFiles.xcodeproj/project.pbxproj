@@ -1690,6 +1690,7 @@
 		54A7596C2014AD80001B26D7 /* L97.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7558E2014AD7C001B26D7 /* L97.swift */; };
 		54A7596D2014AD80001B26D7 /* L73.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7558F2014AD7C001B26D7 /* L73.swift */; };
 		54A7596E2014AD80001B26D7 /* L36.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755902014AD7C001B26D7 /* L36.swift */; };
+		54A759712014AF5E001B26D7 /* SimpleObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A759702014AF5E001B26D7 /* SimpleObjC.m */; };
 		54B0BAA02014A2E6007892F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BA9F2014A2E6007892F4 /* AppDelegate.swift */; };
 		54B0BAA22014A2E6007892F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0BAA12014A2E6007892F4 /* ViewController.swift */; };
 		54B0BAA52014A2E6007892F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B0BAA32014A2E6007892F4 /* Main.storyboard */; };
@@ -3381,6 +3382,9 @@
 		54A7558E2014AD7C001B26D7 /* L97.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L97.swift; sourceTree = "<group>"; };
 		54A7558F2014AD7C001B26D7 /* L73.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L73.swift; sourceTree = "<group>"; };
 		54A755902014AD7C001B26D7 /* L36.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L36.swift; sourceTree = "<group>"; };
+		54A7596F2014AF5D001B26D7 /* ManyFiles-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManyFiles-Bridging-Header.h"; sourceTree = "<group>"; };
+		54A759702014AF5E001B26D7 /* SimpleObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleObjC.m; sourceTree = "<group>"; };
+		54A759722014B0FF001B26D7 /* SimpleObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleObjC.h; sourceTree = "<group>"; };
 		54B0BA9C2014A2E6007892F4 /* ManyFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManyFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B0BA9F2014A2E6007892F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54B0BAA12014A2E6007892F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -5245,6 +5249,9 @@
 				54B0BAA82014A2E6007892F4 /* LaunchScreen.storyboard */,
 				54B0BAA32014A2E6007892F4 /* Main.storyboard */,
 				54B0BAA12014A2E6007892F4 /* ViewController.swift */,
+				54A759722014B0FF001B26D7 /* SimpleObjC.h */,
+				54A759702014AF5E001B26D7 /* SimpleObjC.m */,
+				54A7596F2014AF5D001B26D7 /* ManyFiles-Bridging-Header.h */,
 			);
 			path = ManyFiles;
 			sourceTree = "<group>";
@@ -5281,6 +5288,7 @@
 				TargetAttributes = {
 					54B0BA9B2014A2E6007892F4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -5434,6 +5442,7 @@
 				54A7589B2014AD7F001B26D7 /* M55.swift in Sources */,
 				54A7560C2014AD7D001B26D7 /* Q80.swift in Sources */,
 				54A758A82014AD7F001B26D7 /* M93.swift in Sources */,
+				54A759712014AF5E001B26D7 /* SimpleObjC.m in Sources */,
 				54A757A52014AD7E001B26D7 /* I92.swift in Sources */,
 				54A7577A2014AD7E001B26D7 /* H79.swift in Sources */,
 				542696D42014A7EE00789E26 /* C31.swift in Sources */,
@@ -7142,12 +7151,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
 				INFOPLIST_FILE = ManyFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.ManyFiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ManyFiles/ManyFiles-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -7157,12 +7169,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
 				INFOPLIST_FILE = ManyFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.ManyFiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ManyFiles/ManyFiles-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
