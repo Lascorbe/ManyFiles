@@ -1,25 +1,38 @@
-# XCode 9.2 Server build bot is unable to compile large projects
+# XCode 10.2.x is unable to compile large Swift modules
 
-This repository is intended to demonstrate the bug reported to Apple as incident *36711458*.
+Open radar link: https://openradar.appspot.com/radar?id=5044574703583232
 
-It seems a build bot (tested with *XCode 9.2 (9C40b)*) is unable to compile a project if the number of files in a target exceeds some limit.
+Summary:
+When a Swift project is big enough, the build system generates a SwiftC command that does not fit the command line length on the host system, failing to build the project. SwiftC (from Swift 5.0 on) support passing parameters via response files (i.e., swiftc @foo.txt where foo.txt contains the arguments) just as clang and many other compilers do. So the compiler feature is present in Swift 5.0, but Xcode appears to still need to be updated to write its command line arguments to a @params file in order for it to work. Therefore, it is not possible to build large swift modules (between 1000-2000 swift files depending on the length of the project path).
 
-The branch *does_work* of this repository contains a target with 2099 files to be compiled. A build bot configured to integrate this branch is working:
+Swift PRs fixing the issue can be found here:
+- https://github.com/apple/swift/pull/15853
+- https://github.com/apple/swift/pull/16362
 
-![Screenshot of build phases](/Assets/Compiling_2099_files_succeeded/buildphases.png?raw=true)
+Forum thread here: https://forums.swift.org/t/swift-compilation-reaching-arg-max-limit-causing-xcode-build-failure/6494/3
 
-![Screenshot of the successful integration](/Assets/Compiling_2099_files_succeeded/screenshot.png?raw=true)
+Stackoverflow response with a summary of the issue: https://stackoverflow.com/questions/48457585/zombie-archiving-failed-using-integration-menu/48525938#48525938
 
-If the 2100th file is added [to the target](https://github.com/chkpnt/ManyFiles/compare/does_not_work...does_work), the build is unable to succeed: According to the build [log](/Assets/Compiling_2100_files_failed/xcodebuild.log), the build phase `Compile Sources` is missing the step `CompileSwiftSources normal arm64 com.apple.xcode.tools.swift.compiler` which leads to a linker failure in a subsequent step:
+Steps to Reproduce:
+1. Clone https://github.com/Lascorbe/ManyFiles project (a fork of previous work by Gregor Dschung: https://github.com/chkpnt/ManyFiles).
+2. Open ManyFiles.xcodeproj in Xcode
+3. Build project
+4. Build fails with error:
 
-![Screenshot of the unsuccessful integration](/Assets/Compiling_2100_files_failed/screenshot.png?raw=true)
+- With the new build system -
+unable to spawn process (Argument list too long)
 
-You can find the log files in this repository under [Assets](/Assets).
+- With the legacy build system -
+Build operation failed without specifying any errors. Individual build tasks may have failed for unknown reasons. One possible cause is if there are too many (possibly zombie) processes; in this case, rebooting may fix the problem. Some individual build task failures (up to 12) may be listed below.
 
-Using *xcodebuild* on the command line is not failing in both cases.
+Expected Results:
+Xcode builds the module.
 
-## Assumption
-I do not think the issue depends on the concrete number of files to be compiled: An other project I'm working with is able to be compiled by the build bot when its build target contains 1384 files, but a commit where the target contains 1392 files is failing in the same way as this project:
-The number of files is less than here, but their file names are quite longer.
+Actual Results:
+Xcode fails to build the module.
 
-On my system `getconf ARG_MAX` results in 262144, maybe the build bot is reaching this limit.
+Version/Build:
+Xcode 10.2.1 (10E1001)
+
+Configuration:
+macOS 10.14.4, Swift 5
